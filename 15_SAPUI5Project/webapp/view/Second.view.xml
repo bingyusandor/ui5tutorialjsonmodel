@@ -1,0 +1,59 @@
+<robert:View
+	xmlns:robert="sap.ui.core.mvc"
+	xmlns:core="sap.ui.core"
+	xmlns:f="sap.ui.layout.form"
+	xmlns="sap.m"
+	xmlns:t="sap.ui.table"
+	controllerName="tortoise.controller.Main">
+	<Button text="Flip Model" press="pacman"></Button>
+	<f:SimpleForm id="zkas" editable="true" title="Employee Data" layout="ResponsiveGridLayout">
+		<f:content>
+			<Label text="Emp Id"></Label>
+			<Input value="{/empStr/empId}"></Input>
+			<Label text="Name"></Label>
+			<Input value="{/empStr/empName}"></Input>
+			<Label text="Salary"></Label>
+			<Input value="{/empStr/salary}"></Input>
+			<Label text="Currency"></Label>
+			<Input value="{/empStr/curr}"></Input>
+		</f:content>
+	</f:SimpleForm>
+	<!-- Employee Table-->
+	<t:Table id="idTable"
+			 rows="{/empTable}"
+			 selectionMode="Single"
+			 rowSelectionChange="onRowSelect"
+			 alternateRowColors="true">
+	<t:columns>
+			<t:Column label="Employee ID">
+				<t:template>
+					<Text text="{empId}"></Text>
+				</t:template>
+			</t:Column>
+			<t:Column label="Employee Name">
+				<t:template>
+					<Text text="{empName}"></Text>
+				</t:template>
+			</t:Column>
+			<t:Column label="Salary">
+				<t:template>
+					<Text text="{salary}"></Text>
+				</t:template>
+			</t:Column>
+			<t:Column label="Currency">
+				<t:template>
+					<Text text="{curr}"></Text>
+				</t:template>
+			</t:Column>
+	</t:columns>
+	</t:Table>
+	<!-- Metadata Information-->
+	<f:SimpleForm id="infoForm" editable="false" title="Metadata">
+		<f:content>
+			<Label text="Actual default model"></Label>
+			<Input value="{/bindingInfo/actDefaultModel}"
+				   editable="false">
+			</Input>	
+		</f:content>
+	</f:SimpleForm>
+</robert:View>

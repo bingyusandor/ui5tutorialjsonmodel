@@ -1,0 +1,33 @@
+<html>
+	<head>
+		<script src="https://sapui5.hana.ondemand.com/resources/sap-ui-core.js"
+		        data-sap-ui-libs="sap.m,sap.ui.layout"
+		        data-sap-ui-theme="sap_bluecrystal"
+		        data-sap-ui-resourceroots='{
+		        	"tortoise" : "./"
+		        }'>
+			 
+		</script>
+		<script>
+		// Ctrl+/
+			// var oView = new sap.ui.view("idSpiderman",{
+			// 	viewName: 'tortoise.view.Main',
+			// 	type: "JS"
+			// });
+			
+			// oView.placeAt("avengers");
+			
+			var oXMLView = new sap.ui.view("idMax",{
+				viewName: "tortoise.view.Second",
+				type: sap.ui.core.mvc.ViewType.XML
+			});
+			
+			oXMLView.placeAt("ninjas");
+			
+		</script>
+	</head>
+	<body class="sapUiBody">
+		<div id="avengers"></div>
+		<div id="ninjas"></div>
+	</body>
+</html>

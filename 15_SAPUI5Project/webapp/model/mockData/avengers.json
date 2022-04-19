@@ -1,0 +1,43 @@
+{
+	"metadata" : {
+		"modelName": "avangers"
+	},
+	
+	"empStr": {
+		"empId": 90,
+		"empName": "Ironman",
+		"salary": 9000,
+		"curr": "USD"
+	},
+	"empTable": [{
+			"empId": 901,
+			"empName": "X Men",
+			"salary": 9800,
+			"curr": "EUR"
+		},
+		{
+			"empId": 902,
+			"empName": "Spiderman",
+			"salary": 5400,
+			"curr": "USD"
+		},
+		{
+			"empId": 903,
+			"empName": "Thor",
+			"salary": 7400,
+			"curr": "JPY"
+		},
+		{
+			"empId": 904,
+			"empName": "Cpt. America",
+			"salary": 5500,
+			"curr": "USD"
+		},
+		{
+			"empId": 905,
+			"empName": "wonder Woman",
+			"salary": 1200,
+			"curr": "USD"
+		}
+	]
+}

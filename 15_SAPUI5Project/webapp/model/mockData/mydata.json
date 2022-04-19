@@ -1,0 +1,36 @@
+{
+	"metadata" : {
+		"modelName": "mydata"
+	},
+	"empStr": {
+		"empId": 10,
+		"empName": "Anubhav",
+		"salary": 500,
+		"curr": "EUR"
+	},
+	"empTable": [{
+			"empId": 500,
+			"empName": "Tammana",
+			"salary": 1500,
+			"curr": "EUR"
+		},
+		{
+			"empId": 510,
+			"empName": "Janvi",
+			"salary": 2500,
+			"curr": "EUR"
+		},
+		{
+			"empId": 520,
+			"empName": "Ananya",
+			"salary": 2800,
+			"curr": "EUR"
+		},
+		{
+			"empId": 530,
+			"empName": "Sonia",
+			"salary": 9500,
+			"curr": "EUR"
+		}
+	]
+}
